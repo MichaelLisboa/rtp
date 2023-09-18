@@ -1,4 +1,5 @@
 import * as React from "react"
+import { PlayerNews } from "../services/player-news"
 
 const pageStyles = {
   color: "#232129",
@@ -122,12 +123,13 @@ const links = [
     color: "#663399",
   },
 ]
-
+//just playing around with the fetch
+const playerData = await PlayerNews.getPlayerNews()
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations
+        Congratulations { playerData[0].Player }
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
       </h1>
