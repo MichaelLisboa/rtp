@@ -3,17 +3,17 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 
 
-const IndexPage = () => {
+const loginPage = () => {
   return (
     <Layout>
       <h1 className="text-3xl font-bold underline">
-        Index
+        Login/Register
       </h1>
-      <Link to="/login/">Get Started</Link>
+      <Link to="/connectToYahooFantasy/">Connect to Yahoo! Fantasy</Link>
     </Layout>
   )
 }
 
-export default IndexPage
+export default loginPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Sign in or Register</title>

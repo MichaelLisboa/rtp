@@ -6,7 +6,11 @@ module.exports = {
     title: `Return2Play`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sitemap",
+    'gatsby-plugin-postcss',
+  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
