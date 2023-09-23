@@ -1,5 +1,5 @@
 import * as React from "react"
-import { PlayerNews } from "../services/player-news"
+import { YahooFantasyAuth } from "../services/yahoo-auth"
 
 const pageStyles = {
   color: "#232129",
@@ -123,16 +123,16 @@ const links = [
     color: "#663399",
   },
 ]
-//just playing around with the fetch
-const playerData = await PlayerNews.getPlayerNews()
+const yahooFantasyAuth = new YahooFantasyAuth()
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations { playerData[0].Player }
+        Congratulations { 'playerData[0].Player' }
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
       </h1>
+      <a href={yahooFantasyAuth.buildTokenURL()}>Click here to auth</a>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time. 😎

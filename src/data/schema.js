@@ -1,5 +1,6 @@
 import { GraphQLObjectType, GraphQLSchema } from 'graphql'
-import { GET_PLAYER_NEWS } from './queries/player-news'
+import { GET_PLAYER_HEALTH } from './queries/player-health'
+import { CREATE_PLAYER_HEALTH } from './mutations/add-player-health'
 
 /**
  * Need entity structures before creating user and player entities
@@ -7,13 +8,15 @@ import { GET_PLAYER_NEWS } from './queries/player-news'
 const rootQuery = new GraphQLObjectType({
     name: 'RootQuery',
     fields: {
-        getPlayerNews: GET_PLAYER_NEWS
+        getPlayerNews: GET_PLAYER_HEALTH
     }
 })
 
 const Mutation = new GraphQLObjectType({
     name: 'RootQuery',
-    fields: {}
+    fields: {
+        createPlayerHealth: CREATE_PLAYER_HEALTH
+    }
 })
 
 

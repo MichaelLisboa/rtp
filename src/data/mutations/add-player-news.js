@@ -1,1 +1,1 @@
-//export const CREATE_PLAYER_NEWS
+export const CREATE_PLAYER_NEWS

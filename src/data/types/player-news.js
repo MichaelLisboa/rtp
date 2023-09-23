@@ -1,4 +1,4 @@
-import { GraphQLObjectType, GraphQLInt, GraphQLString, GraphQLBoolean } from "graphql"
+import { GraphQLObjectType, GraphQLInt, GraphQLString, GraphQLBoolean, GraphQLID } from "graphql"
 
 /**
  * This will change to Player. News will be read daily and on request, we dont save them
@@ -6,6 +6,7 @@ import { GraphQLObjectType, GraphQLInt, GraphQLString, GraphQLBoolean } from "gr
 export const PlayerNews = new GraphQLObjectType({
     name: "PlayerNews",
     fields: {
+      id: { type: GraphQLID },
       player: { type: GraphQLString },
       source: { type: GraphQLString },
       handle: { type: GraphQLString },
