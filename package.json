@@ -21,6 +21,7 @@
     "body-parser": "^1.20.2",
     "browserify-fs": "^1.0.0",
     "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
     "cookie-parser": "^1.4.6",
     "crypto-browserify": "^3.12.0",
     "dotenv": "^16.3.1",
@@ -51,6 +52,11 @@
     "yahoo-fantasy": "^5.2.2"
   },
   "devDependencies": {
-    "process": "^0.11.10"
+    "autoprefixer": "^10.4.15",
+    "gatsby-plugin-postcss": "^6.12.0",
+    "postcss": "^8.4.30",
+    "process": "^0.11.10",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3"
   }
 }

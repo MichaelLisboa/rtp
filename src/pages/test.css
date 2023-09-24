@@ -1,0 +1,11 @@
+button {
+    border: 1px solid red;
+    width: 100px;
+    height: 25px;
+}
+
+input {
+    border: 1px solid red;
+    width: 100px;
+    height: 14px;
+}
